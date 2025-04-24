@@ -17,3 +17,8 @@ def potencia(base, expoente):
     for _ in range(expoente):
         resultado *= base
     return resultado
+ 
+ def raiz_quedrada(x):
+    if x < 0:
+        raise ValueError("Número negativo não permitido")
+    return x ** 0.5
